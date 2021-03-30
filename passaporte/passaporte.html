@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charpersonagem="utf-8">
+    <title>Crie seu passaporte</title>
+    <link rel="stylesheet" href="../universal.css">
+    <link rel="stylesheet" href="passaporte.css">
+    <link rel="icon" href="../universal/icone.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" class="logo">
+
+      <nav>
+        <a href="../index.html">Início</a>
+        <a href="../vulcanismo.html">Vulcanismo</a>
+        <a href="../geologia.html">Geologia</a>
+        <a href="../recordes.html">Curiosidades</a>
+      </nav>
+
+    </header>
+
+    <div class="divpassaporte">
+
+      <main>
+        <section>
+          <h2>Crie seu passaporte:</h2>
+          <a href="../1-mapa-vulcoes.html">
+            <button type="button" class="btn btn-success disabled viajar" >Tudo pronto?! Vamos viajar!</button>
+          </a>
+        </section>
+
+        <article class="passaporte">
+          <p class="saida" id="digitado">...</p>
+          <p class="saida" id="assinado">...</p>
+          <img src="../personagens/perfil/perfil2.png" id="perfil">
+
+        </article>
+
+        <article class="nome">
+          <label><h3>Nome:</h3>
+          <input id="nome" type="text" size="50" maxlength="20"></label>
+
+        </article>
+
+        <article class="personagens">
+          <h4>Personagem:</h4>
+          <div id="fila1">
+            <img src="../personagens/3x4/foto1.png" data-personagem="1">
+            <img src="../personagens/3x4/foto2.png" data-personagem="2">
+            <img src="../personagens/3x4/foto3.png" data-personagem="3">
+            <img src="../personagens/3x4/foto4.png" data-personagem="4">
+          </div>
+
+          <div id="fila2" >
+            <img src="../personagens/3x4/foto5.png" data-personagem="5">
+            <img src="../personagens/3x4/foto6.png" data-personagem="6">
+            <img src="../personagens/3x4/foto7.png" data-personagem="7">
+            <img src="../personagens/3x4/foto8.png" data-personagem="8">
+          </div>
+        </article>
+        <article class="personagemcorpo">
+          <img src="" alt="">
+
+        </article>
+      </main>
+      <button id="pronto" type="button" name="button">Pronto!</button>
+    </div>
+    <script src="pass.js"></script>
+  </body>
+</html>

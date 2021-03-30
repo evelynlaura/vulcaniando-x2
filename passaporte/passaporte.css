@@ -1,0 +1,268 @@
+@font-face {
+  font-family: typewriter;
+  src: url(JMHTypewriter.otf);
+}
+
+@font-face {
+  font-family: Carlista;
+  src: url(CarlistaButtery.ttf);
+}
+
+body{
+  background-color: black;
+  background: url('fundo.jpg') center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*
+.divpassaporte{
+  max-height: 60%;
+}
+*/
+header{
+  font-family: 'Arial Bold', sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100%;
+  margin-top: 3%;
+  margin-bottom: -30%;
+  position: relative;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+nav a{
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  box-sizing: border-box;
+  border: 5px solid white;
+  border-radius: 50px;
+  width: 220px;
+  text-align: center;
+  padding: 10px;
+  margin-left: 20px;
+  transition:transform .2s cubic-bezier(0.04, 1.1, 1, 1);
+}
+
+nav a:hover{
+  color: black;
+  background-color: white;
+  transform: scale(1.2);
+}
+
+.logo{
+  position: relative;
+  float: left;
+  top: -25px;
+  width: 350px;
+  padding: 10px;
+}
+
+section{
+  height: 60px;
+  grid-area: titulo;
+}
+
+section h2{
+  position: relative;
+  font-family: 'Arial Bold', sans-serif;
+  font-size: 60px;
+  color: white;
+  margin-top: -1px;
+}
+
+section a{
+  display: inline-block;; /*mudar para inline-block no js*/
+  color: white;
+  padding: 2%;
+  position: absolute;
+
+  opacity: 100%;
+  animation: aparece 4s linear;
+}
+
+@keyframes aparece {
+  from { opacity: 0%;   }
+  to   { opacity: 100%; }
+}
+
+main{
+  display:grid;
+  grid-template-columns: 13fr 18fr 12fr;
+  grid-template-rows: 1fr 4fr 9fr;
+  grid-template-areas: "titulo titulo corpo"
+  "passaporte nome corpo"
+  "passaporte personagens corpo";
+  grid-gap: 30px;
+  height: 600px;
+  margin-left: 7%;
+  width: 1200px;
+
+}
+
+main article{
+  grid-area: passaporte;
+}
+
+#digitado {
+  position: relative;
+  text-align: center;
+  top: 362px;
+  font-family: typewriter;
+  font-size: 18px;
+  opacity: 85%;
+}
+
+#assinado {
+  position: relative;
+  text-align: center;
+  top: 348px;
+  font-family: Carlista;
+  font-size: 50px;
+  word-spacing: -20px;
+}
+
+main .passaporte #passaporte{
+  position: relative;
+  display:inline-block;
+  top: -200px;
+  width: 344px;
+}
+
+.passaporte {
+  background: url('passaporte.png') no-repeat;
+  background-size: 344px auto;
+  width: 100%;
+}
+
+.passaporte #perfil{
+  position: relative;
+  width: 100%;
+  top: -27%;
+}
+
+main .nome{
+  grid-area: nome;
+  font-family: 'arial', sans-serif;
+}
+
+main article h3{
+  text-indent: 3px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: white;
+}
+
+main article input{
+  position: relative;
+  margin-top: -50px;
+  border-radius: 50px;
+  border: 5px solid white;
+  width: 441px;
+  height: 16%;
+  background-color: rgb(0, 0, 0, 0);
+  text-decoration-color: white;
+  padding: 3px;
+  color: white;
+  margin-left: 5px;
+  font-size: 28px;
+  text-indent: 5px;
+  margin-bottom: 10px;
+  font-family: 'Arial Bold', sans-serif;
+}
+
+main article textarea:focus,
+main article input:focus,
+main article select:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#pronto{
+  height: 30%;
+  position: relative;
+  right: 7%;
+  bottom: 3%;
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  border-width: 0px;
+  opacity: 0%;
+}
+
+#pronto:focus{
+  outline: 0;
+}
+
+main .personagens{
+  grid-area: personagens;
+  font-family: 'arial', sans-serif;
+}
+
+main article h4{
+  text-indent: 3px;
+  position: relative;
+  margin-bottom: 2px;
+  margin-top: -25px;
+  font-size: 25px;
+  font-family: 'Arial Bold', sans-serif;
+  color: white;
+}
+
+#fila1,
+#fila2{
+  display: block;
+  position: relative;
+}
+
+article #fila1 img,
+article #fila2 img{
+  height: 150px;
+}
+
+main .personagem{
+  position: relative;
+  bottom: 950px;
+  margin-left: 65%;
+}
+
+.personagemcorpo {
+  grid-area: corpo;
+}
+
+.personagemcorpo img {
+  height: 600px;
+}
+
+@media only screen and (min-width: 1459px){
+  main{
+      margin-bottom: -10%;
+  }
+  header{
+    margin-bottom: 9%;
+  }
+}
+
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.viajar {
+  position: absolute;
+  left: 1550%;
+  top: 10%;
+}
+
+#viajar {
+  background-color: yellow;
+}
