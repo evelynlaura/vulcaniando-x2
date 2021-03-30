@@ -9,6 +9,7 @@
 }
 
 body{
+  font-family: 'Nunito', sans-serif;
   background-color: black;
   background: url('fundo.jpg') center center no-repeat fixed;
   -webkit-background-size: cover;
@@ -22,7 +23,7 @@ body{
 }
 */
 header{
-  font-family: 'Arial Bold', sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin-left: 5%;
   margin-right: 5%;
   height: 100%;
@@ -72,7 +73,7 @@ section{
 
 section h2{
   position: relative;
-  font-family: 'Arial Bold', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 60px;
   color: white;
   margin-top: -1px;
@@ -150,7 +151,7 @@ main .passaporte #passaporte{
 
 main .nome{
   grid-area: nome;
-  font-family: 'arial', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 main article h3{
@@ -176,7 +177,7 @@ main article input{
   font-size: 28px;
   text-indent: 5px;
   margin-bottom: 10px;
-  font-family: 'Arial Bold', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 main article textarea:focus,
@@ -204,7 +205,7 @@ main article select:focus{
 
 main .personagens{
   grid-area: personagens;
-  font-family: 'arial', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 main article h4{
@@ -213,7 +214,7 @@ main article h4{
   margin-bottom: 2px;
   margin-top: -25px;
   font-size: 25px;
-  font-family: 'Arial Bold', sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: white;
 }
 
