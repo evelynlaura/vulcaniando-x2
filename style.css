@@ -1,0 +1,467 @@
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+header {
+  height: 100%;
+}
+
+main, header {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+main, header img {
+  animation: aparecer 2s ease-in-out;
+}
+@keyframes aparecer {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+/* primeira pagina */
+#principal {
+  background-image: url(imgs/vulcao-capa.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.logo-principal {
+  float: left;
+  width: 350px;
+  padding: 20px;
+}
+.menu-principal {
+  width: 400px;
+}
+.menu-principal h2 {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.menu-principal a:hover, #vulcanismo
+.menu a[href="vulcanismo.html"], #geologia
+.menu a[href="geologia.html"], #recordes
+.menu a[href="recordes.html"], #creditos
+.menu a[href="creditos.html"] {
+  color: black;
+  background-color: white;
+  transform: scale(1.2);
+}
+
+.menu-principal a {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 5px solid white;
+  border-radius: 50px;
+  width: 220px;
+  text-align: center;
+  transition:transform .2s cubic-bezier(0.04, 1.1, 1, 1);
+}
+
+.vulcao-krakatoa {
+  float: right;
+  width: 360px;
+  text-align: justify;
+  margin-top: -500px;
+  color: white;
+}
+
+.vulcao-krakatoa h3 {
+  text-align: center;
+}
+
+#icone-easter-egg {
+  position: relative;
+  left: 100%;
+  width: 6%;
+  opacity: 0.02;
+}
+
+#icone-easter-egg:hover {
+  opacity: 0.05;
+}
+
+/* pagina VULCANISMO */
+#vulcanismo {
+  background-image: url(imgs/capa-vulcanismo.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+}
+
+#principal header {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+
+footer {
+  border-top: 5px solid black;
+  font-family: 'Questrial', sans-serif;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: black;
+  padding: 1%;
+}
+
+#informacoes-rodape {
+  float: left;
+}
+
+img[src="imgs/logo-preta.png"] {
+  width: 28%;
+  float: right;
+  padding: 1%;
+}
+
+img[src="imgs/logo-cefet.png"] {
+  width: 8%;
+  float: right;
+}
+
+ul img {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+}
+
+#tipos-vulcanismo {
+  width: 100%;
+  color: black;
+  padding: 1%;
+}
+
+.gif-esquerda {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  padding: 10px;
+  border: 5px solid white;
+  border-radius: 50px;
+  float: left;
+  margin-right: 5%;
+  margin-left: 3%;
+  margin-bottom: 3%;
+}
+
+/* pagina GEOLOGIA */
+#geologia {
+  background-image: url(imgs/capa-geologia.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+}
+
+.logo {
+  position: relative;
+  top: -25px;
+  float: left;
+  width: 350px;
+  padding: 10px;
+}
+
+.logo-rodape {
+  position: relative;
+  right: -70%;
+  top: -90px;
+  width: 350px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.menu a {
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  box-sizing: border-box;
+  border: 5px solid white;
+  border-radius: 50px;
+  width: 220px;
+  text-align: center;
+  padding: 10px;
+  margin-left: 20px;
+  transition:transform .2s cubic-bezier(0.04, 1.1, 1, 1);
+}
+
+.menu a:hover {
+  color: black;
+  background-color: white;
+  transform: scale(1.2);
+}
+
+#titulo {
+  font-family: 'Questrial', sans-serif;
+  font-size: 100px;
+  width: 80%;
+  color: white;
+  display: flex;
+  align-self: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+p, ul {
+  text-align: justify;
+  font-size: 19px;
+}
+
+.texto-esquerda {
+  float: left;
+  width: 50%;
+  color: black;
+  padding: 2%;
+}
+
+.texo-direita {
+  width: 50%;
+  color: black;
+  padding: 2%;
+}
+
+.imagem-direita {
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 1%;
+  margin-bottom: 3%;
+  width: 40%;
+  border-radius: 35px;
+}
+
+.imagem-esquerda {
+  float: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3%;
+  width: 40%;
+  border-radius: 35px;
+}
+
+/* pagina CURIOSIDADES */
+#recordes {
+  background-image: url(imgs/capa-recordes.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+}
+
+.legenda {
+  position: relative;
+  top: -50%;
+  width: 500px;
+  left: 93%;
+  transition: left 550ms ease-out;
+}
+
+.legenda:hover {
+  left: 65%;
+}
+
+.curiosidade {
+  position: relative;
+  top: -210px;
+}
+
+.curiosidade article {
+  display: inline-block;
+  padding: 1.5%;
+  width: 30%;
+  height: 30%;
+  margin-bottom: -85%;
+}
+
+@media (max-width: 1000px) {
+    .curiosidade article {
+      width: 32%;
+    }
+}
+@media (max-width: 750px) {
+    .curiosidade article {
+      width: 49%;
+    }
+}
+@media (max-width: 400px) {
+    .curiosidade article {
+      width: 100%;
+    }
+}
+
+.curiosidade .descricao-curiosidade {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  width: 355px;
+  height: 276.5px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+  top: -313px;
+  bottom: -50%;
+  opacity: 0;
+  transition: all 200ms ease;
+  color: white;
+}
+
+.curiosidade .descricao-curiosidade:hover {
+  opacity: 1;
+}
+
+.imagens-curiosidades {
+  display: inline;
+  width: 375px;
+  height: 288px;
+}
+
+#reportagem-fantastico iframe {
+  margin-left: 1.6%;
+  margin-right: 0.7%;
+  margin-top: 5%;
+  position: relative;
+  top: -400px;
+}
+
+#reportagem-fantastico p {
+  position: relative;
+  top: -400px;
+  left: 40px;
+  width: 90%;
+}
+
+#reportagem-fantastico img {
+  position: relative;
+  top: -400px;
+  left: 40px;
+  width: 42.5%;
+}
+
+table {
+  position: relative;
+  top: -320px;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 19px;
+}
+
+table a {
+  color: purple;
+}
+
+caption {
+  background-color: rgba(255, 255, 255, .7);
+  font-weight: bold;
+  text-align: center;
+  font-size: 22px;
+  padding: 2%;
+}
+
+thead {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+tbody {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  text-align: center;
+  background-color: white;
+}
+
+th, td {
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+
+tfoot {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  background-color: #76D7C4;
+}
+
+/* pagina CRÉDITOS */
+#creditos {
+  background-image: url(imgs/capa-creditos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#informacoes-creditos h2 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 100px;
+  width: 55%;
+  color: white;
+}
+
+#informacoes-creditos p {
+  opacity: 0.8;
+  width: 55%;
+  font-size: 22px;
+  color: white;
+}
+
+#referencias {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+#referencias h2 {
+  margin-top: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#referencias a:hover {
+  color: orange;
+}
+
+/* pagina EASTER EGG */
+#easter-egg img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+}
+
+#easter-egg p {
+  text-align: center;
+}
+
+#easter-egg a {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+#easter-egg a:hover {
+color: orange;
+}
+
+#voltar-para-cima {
+  position: relative;
+  left: 90%;
+  width: 6%;
+}

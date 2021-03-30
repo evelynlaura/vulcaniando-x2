@@ -1,0 +1,90 @@
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  margin: 5%;
+}
+
+h1{
+  margin-top: -3%;
+  font-size: 400%;
+}
+
+h2{
+  margin-top: -3%;
+  font-size: 200%;
+}
+
+main{
+    width: 50%;
+}
+
+p{
+  font-size: 110%;
+}
+
+.mapa{
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+  border: solid 5px white;
+  border-radius: 15px;
+}
+
+/* IDEA: a opacidade da div ir aumentano aos poucos
+        enquanto a parte de cima e debaixp da tela aparece; */
+.perguntinhas{
+  position: absolute;
+  right: 5%;
+  top: 15%;
+  border: solid 5px white;
+  border-radius: 15px;
+  background-color: #ffffff75;
+  width: 30%;
+  height: 30%;
+  color: black;
+  font-size: 125%;
+  text-align: center;
+}
+
+/*foto do personagem escolhido la no passaporte*/
+.perguntinhas img {
+  position: fixed;
+  right: 27%;
+  top: 9%;
+}
+
+.perguntinhas #opcoes{
+  height: 17%;
+  width: 30%;
+  background-color: white;
+  border-radius: 15px;
+  position: fixed;
+  top: 30%;
+}
+
+.perguntinhas button{
+  background-color: white;
+  display: inline-block;
+  border: solid 3px black;
+  margin-top: 5%;
+  padding: 2%;
+  border-radius: 15px;
+  font-size: 75%;
+}
+
+/*dps q a pessoa clicar*/
+.perguntinhas button #certa{
+  border: solid 3px green;
+}
+
+/*aparecer dps do feedback*/
+.perguntinhas a{
+  color: black;
+  display: block;
+  position: absolute;
+  right: 5%;
+  bottom: 3%;
+}

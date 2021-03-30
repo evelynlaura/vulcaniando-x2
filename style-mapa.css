@@ -1,0 +1,239 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  background: url(imgs/mapa/background-mapa.jpg) center center no-repeat fixed;;
+  background-size: cover;
+}
+  
+main, header {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+  
+main, header img {
+  animation: aparecer 2s ease-in-out;
+}
+  
+@keyframes aparecer {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#logo-mapa {
+  position: absolute;
+  top: 2%;
+  left: 6%;
+  width: 250px;
+}
+
+/*//////////////////////////////////////////////////////*/
+
+/* Menu Vertical */
+
+#icone {
+  height: 90px;
+  cursor: pointer;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+  left: -10px;
+  top: -2%;
+}
+
+nav {
+  background-color: #333;
+  height: 100%;
+  width: 26%;
+  z-index: 0;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  /*transition: all .2s linear;*/
+  transform: translateX(-100%);
+  transition: transform .2s linear;
+}
+
+.barra-abrir {
+  transform: translateX(0);
+}
+
+ul {
+  margin-top: 30%;
+  list-style-type: none;
+}
+
+.link {
+  font-size: 110%;
+  padding-left: 15%;
+  padding: 10%;
+  transition: all .2s linear;
+}
+
+.link a {
+  color: white;
+}
+
+.link:hover {
+  background-color: aquamarine;
+}
+
+/* Janela Modal */
+
+#modal-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#modal {
+  width: 30%;
+  height: 30%;
+  background-color: white;
+  position: absolute;
+  left: 35%;
+  top: 35%;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: auto;
+  border-radius: 0.5em;
+}
+
+#modal-2 {
+  width: 30%;
+  height: 30%;
+  background-color: white;
+  position: absolute;
+  left: 20%;
+  top: 35%;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: auto;
+  border-radius: 0.5em;
+}
+
+#modal p {
+  padding: 5%;
+  text-align: center;
+}
+
+#modal-2 h2 {
+  padding: 5%;
+  text-align: center;
+}
+
+#img-passaporte {
+  height: 70%;
+  position: absolute;
+  left: 55%;
+  top: 15%;
+}
+
+#botao-comecar {
+  color: black;
+  font-size: 100%;
+  background-color: aquamarine;
+  padding: 4%;
+  border: 2px solid rgb(121, 197, 166);
+  border-radius: 0.5em;
+  transition:transform .2s cubic-bezier(0.04, 1.1, 1, 1);
+}
+
+#botao-comecar:hover {
+  background-color: (white);
+  transform: scale(1.5);
+}
+
+.btn {
+  position: absolute;
+  top: 90%;
+  left: 5%;
+  z-index: -2;
+}
+
+/* Vulcões - Fases */
+
+.vulcoes {
+  height: 8%;
+  z-index: -1; 
+}
+
+#vulcao-cuexcomate {
+  position: fixed;
+  left: 22.5%;
+  top: 38.5%;
+}
+
+#vulcao-mauna-loa {
+  position: fixed;
+  left: 12%;
+  top: 44%;
+}
+
+#vulcao-yasur {
+  position: fixed;
+  left: 85%;
+  top: 67%;
+}
+
+#vulcao-tambora {
+  position: fixed;
+  left: 75%;
+  top: 56.7%;
+}
+
+#vulcao-vesuvio {
+  position: fixed;
+  left: 50.7%;
+  top: 27%;
+}
+
+/* Barra Progresso */
+
+.progress {
+  width: 65%;
+  position: absolute;
+  left: 28%;
+  top: 6%;
+  z-index: -2;
+}
+
+/* Spinner */
+
+#spinner-1 {
+  position: absolute;
+  z-index: -2;
+  left: 12.7%;
+  top: 49%;
+}
+
+#spinner-2 {
+  position: absolute;
+  z-index: -2;
+  left: 23.1%;
+  top: 43%;
+}
+
+#spinner-3 {
+  position: absolute;
+  z-index: -2;
+  left: 51.4%;
+  top: 31.6%;
+}
+
+#spinner-4 {
+  position: absolute;
+  z-index: -2;
+  left: 75.7%;
+  top: 61.2%;
+}
+
+#spinner-5 {
+  position: absolute;
+  z-index: -2;
+  left: 85.65%;
+  top: 71.6%;
+}
